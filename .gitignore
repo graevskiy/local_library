@@ -1,0 +1,6 @@
+
+# Text back up files
+*.bak
+
+#DB
+*.sqlite3
