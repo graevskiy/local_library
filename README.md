@@ -25,4 +25,22 @@ Project uses SQLite DB in development.
 pip install -r requirements.txt
 ```
 
-Once you have all your packages installed you need to create db.sqlite3 file.
+After that it needs to create db.sqlite3 file in current instance, so run:
+
+```bash
+python manage.py migrate
+```
+
+It is set up and ready to use now.
+
+## Optional steps
+
+1. load data from db_export.txt to populate DB with Books, Book Instances, Authors and Genres.
+```bash
+python manage.py loaddata
+```
+
+2. create superuser account (see Django docs).
+```bash
+python manage.py createsuperuser
+```
