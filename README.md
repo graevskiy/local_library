@@ -37,7 +37,8 @@ It is set up and ready to use now.
 
 1. load data from db_export.txt to populate DB with Books, Book Instances, Authors and Genres.
 ```bash
-python manage.py loaddata
+python manage.py loaddata catalog/fixtures/groups.json
+python manage.py loaddata catalog/fixtures/dump.json
 ```
 
 2. create superuser account (see Django docs).
